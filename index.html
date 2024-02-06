@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduNexus App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #inputForm {
+            display: none;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .button-container button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to EduNexus</h1>
+        <div class="button-container" id="buttonContainer">
+            <button id="loginBtn">Log In</button>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+        <div id="inputForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="submitBtn">Submit</button>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+    <script>
+        function hideButtonsAndShowForm() {
+            document.getElementById('inputForm').style.display = 'block';
+            document.getElementById('buttonContainer').style.display = 'none';
+        }
+
+        document.getElementById('signupBtn').addEventListener('click', hideButtonsAndShowForm);
+        document.getElementById('loginBtn').addEventListener('click', hideButtonsAndShowForm);
+    </script>
+</body>
+</html>

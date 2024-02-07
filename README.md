@@ -25,11 +25,11 @@ To set up and run the EduNexus Electron app on your local machine, follow these 
 3. **Install dependencies**:
    - Run `npm install` to install all necessary dependencies required by the project.
 
-4. **Start the Electron app**:
-   - Execute `npm start` to launch the EduNexus Electron application.
-
-5. **Run the backend server (Optional)**:
+4. **Run the backend server (Optional)**:
    - If your setup includes a backend server, start it with `node server.js`.
+
+5. **Start the Electron app**:
+   - Execute `npm start` to launch the EduNexus Electron application.
 
 ## Built With
 
